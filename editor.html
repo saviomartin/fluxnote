@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxNote Editor | Developed by Savio Martin</title>
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="icon" href="img/github.png">
+</head>
+<body>
+    <section id="main">
+        <div class="editor">
+            <div class="result">
+                <textarea id="text">What's On Your Mind ?</textarea>
+                <div class="text-controls">
+                    <div class="btn" onclick="startConverting();"><img src="img/microphone.png" alt="speak"></div>
+                    <div class="btn" onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" ><img src="img/video.png" alt="play"></div>     
+                     
+                    <div class="btn"><a href="#"><img src="img/github.png" alt="gitub"></a></div>               
+                </div>
+            </div>
+            <div class="btn-cont">
+                <div class="altbtn" onclick="copy()">Copy Text To Clipboard <img src="img/copy.png" alt="copy"></div>
+                <div class="altbtn" onclick="none()">Clear Everything above <img src="img/eraser.png" alt="copy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Analysing all scripts-->
+    <script src="js/speak-init.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/clear.js"></script>
+</body>
+</html>
