@@ -7,7 +7,7 @@ SprintNote is a simple notepad developed to write notes effortlessly and with ma
 > Star this Project if you it Found Great
 
 ## Demo
-<img src="img/flex.png" height="300px">
+<a href="https://sprintnote.vercel.app/"><img src="img/flex.png" height="300px"> Click Here For the demo</a>
 
 ## Features
 
@@ -26,6 +26,6 @@ SprintNote is a simple notepad developed to write notes effortlessly and with ma
 - Follow Me on Instgagram: https://www.instagram.com/teen_developer/
 
 ## License
-<a href="https://github.com/saviomartin/sprintnote/blob/master/LICENSE.txt">MIT</a>
+<a href="https://github.com/saviomartin/sprintnote/blob/master/LICENSE.txt">MIT License</a>
 
 ### Developed By <a href="https://www.instagram.com/teen_developer/">Savio Martin</a>
