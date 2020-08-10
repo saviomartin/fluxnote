@@ -3,35 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FluxNote Editor | Developed by Savio Martin</title>
-    <link rel="stylesheet" href="css/editor.css">
+    <title>SprintNote | To those who need to write notes Efffortlessly.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/github.png">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loadingio-spinner-eclipse-o78o8tpvu1p"><div class="ldio-z6kqg2nwmsq">
+        <div></div>
+        </div></div>
+    </div>
+    
     <section id="main">
-        <div class="editor">
-            <div class="result">
-                <textarea id="text">What's On Your Mind ?</textarea>
-                <div class="text-controls">
-                    <div class="btn" onclick="startConverting();"><img src="img/microphone.png" alt="speak"></div>
-                    <div class="btn" onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" ><img src="img/video.png" alt="play"></div>     
-                     
-                    <div class="btn"><a href="#"><img src="img/github.png" alt="gitub"></a></div>               
-                </div>
+        <div id="cont">
+            <div class="head">
+                <h4>Introducing <span>SprintNote</span> To those who need to write notes <span>Efffortlessly.</span></h4>
+                <p>SprintNote is a simple notepad developed to write notes effortlessly and with many features such as Voice Recognition, Text Speech Convertor, Copy Text etc</p>
             </div>
             <div class="btn-cont">
-                <div class="altbtn" onclick="copy()">Copy Text To Clipboard <img src="img/copy.png" alt="copy"></div>
-                <div class="altbtn" onclick="none()">Clear Everything above <img src="img/eraser.png" alt="copy"></div>
+                <button class="btn" onclick="openWin()">
+                    <i class='bx bx-send'></i>
+                    <span class="text">
+                    Start the editor
+                    </span>
+                    <span class="loading-animate"></span>
+                </button>
+                <a href="https://www.instagram.com/teen_developer/">
+                    <button class="btn">
+                        <i class='bx bxl-instagram'></i>
+                        <span class="text">
+                        Follow on Insta
+                        </span>
+                        <span class="loading-animate"></span>
+                    </button>
+                </a>
+                <a href="https://github.com/saviomartin/">
+                    <button class="btn">
+                        <i class='bx bxl-github' ></i>
+                        <span class="text">
+                        Star this project
+                        </span>
+                        <span class="loading-animate"></span>
+                    </button>
+                </a>
             </div>
+            
         </div>
+
     </section>
 
-    <!--Analysing all scripts-->
-    <script src="js/speak-init.js"></script>
-    <script src="js/voice.js"></script>
-    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/copy.js"></script>
-    <script src="js/clear.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/window.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 </html>
