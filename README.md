@@ -7,22 +7,16 @@ SprintNote is a simple notepad developed to write notes effortlessly and with ma
 > Star this Project if you it Found Great
 
 ## Demo
-<img src="img/flex.png">
+<img src="img/flex.png" height="50%">
 
 ## Features
 
   - Voice Recognition<br>
-    <br>
   - Hear what is wrote by Us<br>
-    <br>
   - Customise Everything<br>
-    <br>
   - Fully Responsive
-  <br>
   - Good UI
-  <br>
   - Copy Text in the Browser
-  <br>
   - New Thinks are coming ,Stick to Here
 
 ## Imprortant links
