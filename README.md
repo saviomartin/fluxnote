@@ -7,7 +7,7 @@ SprintNote is a simple notepad developed to write notes effortlessly and with ma
 > Star this Project if you it Found Great
 
 ## Demo
-<img src="img/flex.png" height="400px">
+<img src="img/flex.png" height="300px">
 
 ## Features
 
