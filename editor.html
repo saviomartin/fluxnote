@@ -19,20 +19,53 @@
             <div class="result">
                 <textarea id="text">What's On Your Mind ?</textarea>
                 <div class="text-controls">
-                    <div class="btn" onclick="startConverting();"><img src="img/microphone.png" alt="speak"></div>
+                    <div class="btn" onclick="startConverting();" id="speakbtn"><img src="img/microphone.png" alt="speak"></div>
                     <div class="btn" onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" ><img src="img/video.png" alt="play"></div>     
                      
                     <div class="btn"><a href="#"><img src="img/github.png" alt="gitub"></a></div>               
                 </div>
             </div>
             <div class="btn-cont">
-                <div class="altbtn" onclick="copy()">Copy Text To Clipboard <img src="img/copy.png" alt="copy"></div>
-                <div class="altbtn" onclick="none()">Clear Everything above <img src="img/eraser.png" alt="copy"></div>
+                <div class="altbtn" onclick="copy()" id="copybtn">Copy Text To Clipboard <img src="img/copy.png" alt="copy"></div>
+                <div class="altbtn" onclick="none()" id="clearbtn">Clear Everything above <img src="img/eraser.png" alt="copy"></div>
+            </div>
+        </div>
+    </section>
+    <section id="edit">
+        <div class="panel">
+            <div class="panel-cont">
+                <div class="edit">
+                    <h3>Change the Colour of the Font</h3>
+                    <div class="flex-cont">
+                        <div class="red" onclick="redfont()"></div>
+                        <div class="blue" onclick="bluefont()"></div>
+                        <div class="green" onclick="greenfont()"></div>
+                        <div class="bx" onclick="blackfont()"></div>
+                    </div>
+                </div>
+                <div class="edit">
+                    <h3>Change the Font Size</h3>
+                    <div class="flex-cont fontsize">
+                        <div class="px" onclick="tpxsize()">15px</div>
+                        <div class="px" onclick="fpxsize()">25px</div>
+                        <div class="px" onclick="hpxsize()">30px</div>
+                    </div>
+                </div>
+                <div class="edit">
+                    <h3>Change the Font Weight</h3>
+                    <div class="flex-cont fontsize">
+                        <div class="px" onclick="threeweight()">300</div>
+                        <div class="px" onclick="fiveweight()">500</div>
+                        <div class="px" onclick="eightweight()">500</div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
     <!--Analysing all scripts-->
+    <script src="js/edit.js"></script>
     <script src="js/speak-init.js"></script>
     <script src="js/voice.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
