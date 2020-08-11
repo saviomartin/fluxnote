@@ -10,16 +10,88 @@ body{
     background: url(../img/bg.png);
     font-family: 'Poppins', sans-serif;
     background-size: cover;
+    display: flex;
 }
 
 #main{
     height: 100vh;
-    width: 100%;
+    width: 77.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edit{
+    height: 100vh;
+    width: 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    height: 95%;
+    width: 95%;
+    background: #001a78;  
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.edit{
+    color: #fff;
+    padding: 20px 25px;
+    
+}
+.edit h3{
+    font-weight: 500;
+}
+.edit h4{
+    font-weight: 500;
+    padding: 10px 0 0 20px;
+    margin: 2.5px;
+}
+.edit h4 span{
+    background: #ccc;
+    color: #000;
+    padding: 5px;
+    
+}
+.flex-cont{
+    display: flex;
+    width: 100%;
+}
+.red,.blue,.green,.bx{
+    height: 50px;
+    width: 50px;
+    box-shadow: 10px 0px 70px 0px rgba(0, 0, 0, .25);
+    margin: 5px 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fontsize .px{
+    padding: 7.5px 15px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.red{
+    background: #e63946;
+}
+.blue{
+    background: #0077b6;
+}
+.green{
+    background: #00f5d4;
+}
+.bx{
+    background: #000;
+}
 .editor{
     height: 90%;
     width: 75%;
@@ -68,7 +140,7 @@ body{
     border: none;
     border-radius: 50%;
     background: #fff;
-    margin: 20px 17.5px;
+    margin: 20px 0 20px 40px;
     box-shadow: 0 0 0 7.5px rgba(0, 0, 0, .125),
                 0 0 0 17.5px rgba(0, 0, 0, .125),
                 0 0 0 25px rgba(0, 0, 0, .125);
@@ -132,18 +204,31 @@ body{
 }
 
 @media(max-width:800px){
-    #main{
-        height: 120vh;
-    }
     body{
+        display: block;
         background: url(../img/bgphone.png);
         background-size: cover;
+        background-attachment: fixed;
+    }
+    #main{
+        height: 120vh;
+        width: 100%;
+        
+    }
+    #edit{
+        height: 90vh;
+        width: 100%;
     }
     .editor{
         height: 97.5%;
         width: 100%;
     }
-
+    .panel{
+        height: 95%;
+        width: 95%;
+        background: #001a78;  
+        border-radius: 10px;
+    }
     .result{
         display: block;
         height: 80%;
