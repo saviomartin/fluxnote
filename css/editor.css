@@ -1,282 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    height: 100%;
-    width: 100%;
-    background: url(../img/bg.png);
-    font-family: 'Poppins', sans-serif;
-    background-size: cover;
-    display: flex;
-}
-
-#main{
-    height: 100vh;
-    width: 77.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#edit{
-    height: 100vh;
-    width: 22.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.panel{
-    height: 95%;
-    width: 95%;
-    background: #001a78;  
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.edit{
-    color: #fff;
-    padding: 20px 25px;
-    
-}
-.edit h3{
-    font-weight: 500;
-}
-.edit h4{
-    font-weight: 500;
-    padding: 10px 0 0 20px;
-    margin: 2.5px;
-}
-.edit h4 span{
-    background: #ccc;
-    color: #000;
-    padding: 5px;
-    
-}
-.flex-cont{
-    display: flex;
-    width: 100%;
-}
-.red,.blue,.green,.bx{
-    height: 50px;
-    width: 50px;
-    box-shadow: 10px 0px 70px 0px rgba(0, 0, 0, .25);
-    margin: 5px 2.5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.fontsize .px{
-    padding: 7.5px 15px;
-    background: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2.5px;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.red{
-    background: #e63946;
-}
-.blue{
-    background: #0077b6;
-}
-.green{
-    background: #00f5d4;
-}
-.bx{
-    background: #000;
-}
-.editor{
-    height: 90%;
-    width: 75%;
-}
-
-.result{
-    display: flex;
-    height: 80%;
-    width: 100%;
-}
-
-#text{
-    height: 100%;
-    width: 90%;
-    resize: none;
-    border-radius: 10px;
-    overflow: scroll;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.05em;
-    z-index: 1;
-}
-
-#text::-webkit-scrollbar{
-    background: transparent;
-}
-
-#text:focus{
-    outline: none;
-}
-#text::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 4px;
-}
-.text-controls{
-    height: 100%;
-    width: 10%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.text-controls .btn{
-    height: 55px;
-    width: 55px;
-    border: none;
-    border-radius: 50%;
-    background: #fff;
-    margin: 20px 0 20px 40px;
-    box-shadow: 0 0 0 7.5px rgba(0, 0, 0, .125),
-                0 0 0 17.5px rgba(0, 0, 0, .125),
-                0 0 0 25px rgba(0, 0, 0, .125);
-    transition: .45s;
-    cursor: pointer;
-}
-
-.text-controls .btn img{
-    height: 32.5px;
-    padding: 11px;
-}
-
-.text-controls .btn:hover{
-    transform: scale(1.1);
-}
-
-.btn-cont{
-    display: flex;
-    height: 50px;
-    width: 91%;
-    margin: 30px 0 0 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-cont img{
-    height: 35px;
-    padding: 0 0 0 10px;
-}
-
-.altbtn{
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px 0 0;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #000;
-    border: 1px solid #fff;
-    transition: .5s;
-    font-size: 16px;
-}
-
-.altbtn:hover{
-    background: transparent;
-    color: #fff;
-}
-
-.altbtn:nth-child(2){
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.altbtn:nth-child(2):hover{
-    background: #fff;
-    color: #000;
-}
-
-@media(max-width:800px){
-    body{
-        display: block;
-        background: url(../img/bgphone.png);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    #main{
-        height: 120vh;
-        width: 100%;
-        
-    }
-    #edit{
-        height: 90vh;
-        width: 100%;
-    }
-    .editor{
-        height: 97.5%;
-        width: 100%;
-    }
-    .panel{
-        height: 95%;
-        width: 95%;
-        background: #001a78;  
-        border-radius: 10px;
-    }
-    .result{
-        display: block;
-        height: 80%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #text{
-        height: 85%;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-        margin-left: 2.5%;
-    }
-    
-    .text-controls{
-        height: 15%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;  
-        overflow: hidden;     
-    }
-    .text-controls .btn{
-        transform: scale(0.9);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, .25),
-                    0 0 0 20px rgba(0, 0, 0, .25);
-        margin: 20px 18px;
-    }
-    .btn-cont{
-        display: block;
-        height: 50px;
-        width: 95%;
-        justify-content: center;
-        align-items: center; 
-        margin-left: 2.5%;
-    }
-    .altbtn{
-        height: 100%;
-        width: 100%;
-        margin: 10px 0;
-        justify-content: center;
-        align-items: center; 
-    }
-    
-}
-p::selection,h4::selection,span::selection,textarea::selection{
-    background: #001a78;
-    color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');*{margin:0;padding:0}
+body{height:100%;width:100%;background:url(../img/bg.png);font-family:'Poppins',sans-serif;background-size:cover;display:flex}
+#main{height:100vh;width:77.5%;display:flex;justify-content:center;align-items:center}
+#edit{height:100vh;width:22.5%;display:flex;justify-content:center;align-items:center}
+.panel{height:95%;width:95%;background:#001a78;border-radius:10px;display:flex;justify-content:center;align-items:center}
+.edit{color:#fff;padding:20px 25px}
+.edit h3{font-weight:500}
+.edit h4{font-weight:500;padding:10px 0 0 20px;margin:2.5px}
+.edit h4 span{background:#ccc;color:#000;padding:5px}
+.flex-cont{display:flex;width:100%}
+.red,.blue,.green,.bx{height:50px;width:50px;box-shadow:10px 0 70px 0 rgba(0,0,0,.25);margin:5px 2.5px;border-radius:5px;cursor:pointer}
+.fontsize .px{padding:7.5px 15px;background:#eee;display:flex;justify-content:center;align-items:center;margin:2.5px;color:#000;border-radius:5px;cursor:pointer}
+.red{background:#e63946}
+.blue{background:#0077b6}
+.green{background:#00f5d4}
+.bx{background:#000}
+.editor{height:90%;width:75%}
+.result{display:flex;height:80%;width:100%}
+#text{height:100%;width:90%;resize:none;border-radius:10px;overflow:scroll;padding:10px;font-family:'Poppins',sans-serif;font-size:1.05em;z-index:1}
+#text::-webkit-scrollbar{background:transparent}
+#text:focus{outline:0}
+#text::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px}
+.text-controls{height:100%;width:10%;justify-content:center;align-items:center;display:flex;flex-wrap:wrap}
+.text-controls .btn{height:55px;width:55px;border:0;border-radius:50%;background:#fff;margin:20px 0 20px 40px;box-shadow:0 0 0 7.5px rgba(0,0,0,.125),0 0 0 17.5px rgba(0,0,0,.125),0 0 0 25px rgba(0,0,0,.125);transition:.45s;cursor:pointer}
+.text-controls .btn img{height:32.5px;padding:11px}
+.text-controls .btn:hover{transform:scale(1.1)}
+.btn-cont{display:flex;height:50px;width:91%;margin:30px 0 0 0;align-items:center;justify-content:center}
+.btn-cont img{height:35px;padding:0 0 0 10px}
+.altbtn{height:100%;width:100%;background:#fff;display:flex;align-items:center;justify-content:center;margin:0 10px 0 0;border-radius:10px;cursor:pointer;color:#000;border:1px solid #fff;transition:.5s;font-size:16px}
+.altbtn:hover{background:transparent;color:#fff}
+.altbtn:nth-child(2){background:transparent;color:#fff;border:1px solid #fff}
+.altbtn:nth-child(2):hover{background:#fff;color:#000}
+@media(max-width:800px){body{display:block;background:url(../img/bgphone.png);background-size:cover;background-attachment:fixed}
+#main{height:120vh;width:100%}
+#edit{height:90vh;width:100%}
+.editor{height:97.5%;width:100%}
+.panel{height:95%;width:95%;background:#001a78;border-radius:10px}
+.result{display:block;height:80%;width:100%;justify-content:center;align-items:center}
+#text{height:85%;width:90%;justify-content:center;align-items:center;margin-left:2.5%}
+.text-controls{height:15%;width:100%;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.text-controls .btn{transform:scale(0.9);box-shadow:0 0 0 10px rgba(0,0,0,.25),0 0 0 20px rgba(0,0,0,.25);margin:20px 18px}
+.btn-cont{display:block;height:50px;width:95%;justify-content:center;align-items:center;margin-left:2.5%}
+.altbtn{height:100%;width:100%;margin:10px 0;justify-content:center;align-items:center}
+}p::selection,h4::selection,span::selection,textarea::selection{background:#001a78;color:#fff}
