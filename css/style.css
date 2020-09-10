@@ -1,204 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    height: 100%;
-    width: 100%;
-    background: url(../img/bg.png) #0841AB;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-}
-#main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url(../img/bg.png);
-    background-attachment: fixed;
-    background-size: cover;
-}
-#cont{
-    color: #fff;
-    height: 55%;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
-.head{
-    padding: 0 40px;
-}
-.btn-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 60px;
-    width: 100%;
-}
-.btn {
-    background: #001a78;
-    border: 0px solid #001a78;
-    border-radius: 35px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    outline: none;
-    transition: all .25s ease;
-    width: 250px;
-    position: relative;
-    height: 60px;
-    margin: 5px 5px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    overflow: hidden;
-}
-.btn:not(.loading):hover {
-    box-shadow: 0px 10px 25px 0px rgba(73, 215, 92,.4);
-}
-.btn:not(.loading):hover i {
-    transform: translate(7px);
-}
-.btn i {
-    font-size: 1.45rem;
-    position: absolute;
-    left: 0px;
-    pointer-events: none;
-    z-index: 10;
-    background: inherit;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all .25s ease;
-}
-.btn .text {
-    width: 130px;
-    display: block;
-    position: relative;
-    pointer-events: none;
-    transition: all .25s ease;
-    position: absolute;
-    left: 60px;
-}
-.loading-animate {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    z-index: 100;
-    border-radius: 50%;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    opacity: 0;
-    transition: all .25s ease;
-}
-.loading-animate:after {
-    content: '';
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-left: 3px solid #fff;
-    animation: loading infinite .8s ease .05s;
-    position: absolute;
-}
-.loading-animate:before {
-    content: '';
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-left: 3px solid #fff;
-    animation: loading infinite .8s linear;
-    position: absolute;
-    opacity: .6;
-}
-.btn.loading {
-    width: 60px;
-}
-.btn.loading i {
-    transform: rotate(-90deg);
-    padding-bottom: 4px;
-    padding-left: 3px;
-}
-.btn.loading .text {
-    transform: translate(-140px);
-}
-.btn.loading .loading-animate {
-    opacity: 1;
-}
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.head h4{
-    font-size: 2.5em;
-    padding: 20px 0;
-    font-weight: 700;
-    padding: 0 40px 0 0;
-}
-.head h4 span{
-    color: #111;
-    border-bottom: 3px solid #000;
-}
-.head p{
-    font-size: 1.05em;
-    padding: 20px 20px 20px 0;
-}
-p::selection,h4::selection,span::selection{
-    background: #001a78;
-    color: #fff;
-}
-
-@media(max-width:600px){
-    #main{
-        background: url(../img/bgphone.png);
-        background-size: cover;
-        background-attachment: fixed;
-        height: 110vh;
-    }
-    #cont{
-        color: #fff;
-        height: 90%;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn-cont{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        height: 60px;
-        width: 100%;
-    }
-    .head{
-        padding: 0;
-    }
-    .head h4{
-        font-size: 2em;
-        padding: 20px 40px 20px 0;
-    }
-    .head p{
-        font-size: 1em;
-        padding: 0px 0 20px 0;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');*{margin:0;padding:0}
+body{height:100%;width:100%;background:url(../img/bg.png) #0841ab;background-attachment:fixed;background-size:cover;font-family:'Poppins',sans-serif}
+#main{display:flex;align-items:center;justify-content:center;height:100vh;background:url(../img/bg.png);background-attachment:fixed;background-size:cover}
+#cont{color:#fff;height:55%;width:60%;justify-content:center;align-items:center}
+.head{padding:0 40px}
+.btn-cont{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;height:60px;width:100%}
+.btn{background:#001a78;border:0 solid #001a78;border-radius:35px;font-size:1rem;font-weight:bold;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;outline:0;transition:all .25s ease;width:250px;position:relative;height:60px;margin:5px 5px;font-family:'Poppins',sans-serif;font-weight:500;overflow:hidden}
+.btn:not(.loading):hover{box-shadow:0 10px 25px 0 rgba(73,215,92,.4)}
+.btn:not(.loading):hover i{transform:translate(7px)}
+.btn i{font-size:1.45rem;position:absolute;left:0;pointer-events:none;z-index:10;background:inherit;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .25s ease}
+.btn .text{width:130px;display:block;position:relative;pointer-events:none;transition:all .25s ease;position:absolute;left:60px}
+.loading-animate{position:absolute;width:60px;height:60px;z-index:100;border-radius:50%;top:0;left:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:0;transition:all .25s ease}
+.loading-animate:after{content:'';width:44px;height:44px;border-radius:50%;border:3px solid transparent;border-left:3px solid #fff;animation:loading infinite .8s ease .05s;position:absolute}
+.loading-animate:before{content:'';width:44px;height:44px;border-radius:50%;border:3px solid transparent;border-left:3px solid #fff;animation:loading infinite .8s linear;position:absolute;opacity:.6}
+.btn.loading{width:60px}
+.btn.loading i{transform:rotate(-90deg);padding-bottom:4px;padding-left:3px}
+.btn.loading .text{transform:translate(-140px)}
+.btn.loading .loading-animate{opacity:1}
+@keyframes loading{0%{transform:rotate(0deg)}
+100%{transform:rotate(360deg)}
+}.head h4{font-size:2.5em;padding:20px 0;font-weight:700;padding:0 40px 0 0}
+.head h4 span{color:#111;border-bottom:3px solid #000}
+.head p{font-size:1.05em;padding:20px 20px 20px 0}
+p::selection,h4::selection,span::selection{background:#001a78;color:#fff}
+@media(max-width:600px){#main{background:url(../img/bgphone.png);background-size:cover;background-attachment:fixed;height:110vh}
+#cont{color:#fff;height:90%;width:90%;justify-content:center;align-items:center}
+.btn-cont{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;height:60px;width:100%}
+.head{padding:0}
+.head h4{font-size:2em;padding:20px 40px 20px 0}
+.head p{font-size:1em;padding:0 0 20px 0}
 }
